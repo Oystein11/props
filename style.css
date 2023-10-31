@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+.light_mode {
+    background-color: #fdfdfd;
+    color: #0d0d0d;
+}
+
+.dark_mode {
+    background-color: #0d0d0d;
+    color: #fdfdfd;
+}
