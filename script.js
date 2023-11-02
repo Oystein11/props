@@ -2,21 +2,21 @@
 import {theme_toggle} from "./theme_toggle.js";
 
 //Verdier for hamburgermeny
-const nav_bar = document.querySelector ("#nav_bar_ID");
-const hamburger = document.querySelector ("#hamburger_ID");
+const navBar = document.querySelector (".nav_bar_ID");
+const hamburger = document.querySelector (".hamburger_ID");
 
-let nav_open = false;
+let menu_open = false;
 
 // Funksjon for åpning og lukking av hamburgermeny
-function toggle_nav_bar () {
-    if (nav_open === false) {
-        nav_bar.classList = "show_nav";
+function toggle_menu () {
+    if (menu_open === false) {
+        navBar.classList = "showNav";
         hamburger.classList = "open_menu";
-        nav_open = true;
+        menu_open = true;
     } else {
-        nav_bar.classList = "nav_bar_ID";
+        navBar.classList = "nav_bar_ID";
         hamburger.classList = "hamburger_ID";
-        nav_open = false;
+        menu_open = false;
     }
 }
 

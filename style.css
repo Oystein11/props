@@ -43,7 +43,7 @@ section {
     list-style: none;
 }
 
-.hamburger {
+.closed_menu {
     display: none;
     height: 1rem;
 }
@@ -56,7 +56,7 @@ section {
     height: 1rem;
 }
 
-.show_nav {
+.showNav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,19 +74,21 @@ section {
     max-width: 50px;
     max-height: 50px;
 }
+
 /* Light og Dark mode */
+
 .light_mode {
-    background-color: #fdfdfd;
-    color: #0d0d0d;
+    background-color: white;
+    color: black;
 }
 
 .dark_mode {
-    background-color: #0d0d0d;
-    color: #fdfdfd;   
+    background-color: black;
+   color: orange;   
 }
 
 /* Responsivt for mobil*/
-@media (max-width: 426px) {
+@media (max-width: 480px) {
     .hamburger {
         display: block;
         height: 2rem;
@@ -102,10 +104,6 @@ section {
     .p {
         max-width: 300px;
     }
-
-    .img {
-        max-width: 100px;
-    }
 }
 
 /* Responsivt for nettbrett*/
@@ -113,20 +111,10 @@ section {
     .p {
         max-width: 700px;
     }
-
-    .img {
-        max-width: 100%;
-        max-height: 40em;
-    }
 }
 
 @media (max-width: 1023px) {
     .p {
         max-width: 700px;
-    }
-
-    .img {
-        max-width: 100%;
-        max-height: 35em;
     }
 }
