@@ -1,1 +1,1 @@
-En basic nettside som viser frem props, inkludert en dedikert Dark Mode.
+En basic nettside som viser frem props, inkludert en hamburger-meny og en dedikert Dark Mode.

@@ -1,13 +1,20 @@
 body {
     margin: 0px;
+    height: 100vh;
 }
 
 header, footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 10em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 main {
@@ -26,25 +33,72 @@ section {
     gap: 1em;
 }
 
+/* Detaljer for hamburgermeny*/
+.nav_bar_ID {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 2rem;
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+    height: 1rem;
+}
+
+.open_menu {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 12;
+    height: 1rem;
+}
+
+.show_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: fixed;
+    background-color: white;
+    top: 0;
+}
+
+/* Ikonjustering*/
 .img {
     max-width: 50px;
     max-height: 50px;
 }
-
+/* Light og Dark mode */
 .light_mode {
     background-color: #fdfdfd;
     color: #0d0d0d;
-    
 }
 
 .dark_mode {
     background-color: #0d0d0d;
-    color: #fdfdfd;
-    
+    color: #fdfdfd;   
 }
 
 /* Responsivt for mobil*/
 @media (max-width: 426px) {
+    .hamburger {
+        display: block;
+        height: 2rem;
+        margin: auto;
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav_bar_ID {
+        display: none;
+    }
+
     .p {
         max-width: 300px;
     }
