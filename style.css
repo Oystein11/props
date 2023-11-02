@@ -43,7 +43,7 @@ section {
     list-style: none;
 }
 
-.closed_menu {
+.hamburger {
     display: none;
     height: 1rem;
 }
@@ -56,7 +56,7 @@ section {
     height: 1rem;
 }
 
-.showNav {
+.show_nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +88,7 @@ section {
 }
 
 /* Responsivt for mobil*/
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .hamburger {
         display: block;
         height: 2rem;
